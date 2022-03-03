@@ -1,0 +1,75 @@
+{
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "$ref": "#/definitions/Welcome5",
+  "definitions": {
+    "Welcome5": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "args": {
+          "$ref": "#/definitions/Args"
+        },
+        "headers": {
+          "$ref": "#/definitions/Headers"
+        },
+        "url": {
+          "type": "string",
+          "format": "uri",
+          "qt-uri-protocols": [
+            "https"
+          ]
+        }
+      },
+      "required": [
+        "args",
+        "headers",
+        "url"
+      ],
+      "title": "Welcome5"
+    },
+    "Args": {
+      "type": "object",
+      "additionalProperties": false,
+      "title": "Args"
+    },
+    "Headers": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "x-forwarded-proto": {
+          "type": "string"
+        },
+        "x-forwarded-port": {
+          "type": "string",
+          "format": "integer"
+        },
+        "host": {
+          "type": "string"
+        },
+        "x-amzn-trace-id": {
+          "type": "string"
+        },
+        "accept": {
+          "type": "string"
+        },
+        "user-agent": {
+          "type": "string"
+        },
+        "accept-encoding": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "accept",
+        "accept-encoding",
+        "host",
+        "user-agent",
+        "x-amzn-trace-id",
+        "x-forwarded-port",
+        "x-forwarded-proto"
+      ],
+      "title": "Headers"
+    }
+  }
+}
+

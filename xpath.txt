@@ -1,0 +1,16 @@
+
+sir approach:-
+//span[text()='Sponsored']/ancestor::div[@class='a-section a-spacing-none']/descendant::span[text()='Apple iPhone XR (64GB) - Black']/ancestor::div[@class='a-section a-spacing-none']/following-sibling::div[@class='sg-row']/descendant::span[@class='a-price']
+
+
+
+
+my approach:-
+
+//span[text()='Sponsored']/ancestor::div[@class='a-section a-spacing-none']/descendant::span[contains(text(),'Apple iPhone' )]/ancestor::div[@class='a-section a-spacing-none']/following-sibling::div[@class='sg-row']/descendant::span[@class='a-price']/span[@class='a-offscreen']
+
+
+
+dynamic webtable xpath for gmail  to  select the time for any one mail
+
+//table/tbody/tr[*]/td/descendant::span[text()='11:22 AM']
